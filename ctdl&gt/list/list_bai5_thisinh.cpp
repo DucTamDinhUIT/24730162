@@ -37,7 +37,6 @@ void AddHead(List &l, ThiSinh *p)
     {
         l.head = p;
         l.tail = p;
-        /* code */
     }
     else
     {

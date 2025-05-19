@@ -23,5 +23,45 @@ int main()
         id++;
     }
     cout << "so ky tu la: " << count << endl;
-    
+    // doi ky tu
+    for (int i = 0; i < count; i++)
+    {
+        if (i == 0 || n[i - 1] == ' ')
+        {
+            if (n[i] >= 'a' && n[i] <= 'z')
+            {
+                n[i] -= 32;
+            }
+        }
+        else
+        {
+            if (n[i] >= 'A' && n[i] <= 'Z')
+            {
+                n[i] += 32;
+            }
+        }
+    }
+    cout << "chuoi sau khi doi ky tu: " << n << endl;
+    // bo khoang trang
+    string result = "";
+    for (int i = 0; i < count; i++)
+    {
+        if (n[i] != ' ')
+        {
+            result += n[i];
+        }
+        else
+        {
+            if (result[result.length() - 1] != ' ')
+            {
+                result += n[i];
+            }
+        }
+    }
+    // bo khoang trang o cuoi
+    if (result[result.length() - 1] == ' ')
+    {
+        result = result.substr(0, result.length() - 1);
+    }
+    cout << "chuoi sau khi bo khoang trang: " << result << endl;
 }

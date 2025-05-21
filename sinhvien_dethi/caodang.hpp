@@ -9,5 +9,7 @@ private:
 public:
     CaoDang(/* args */);
     ~CaoDang();
+    void nhapCD();
+    bool xetTNCaoDang();
 };
 

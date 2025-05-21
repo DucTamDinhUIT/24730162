@@ -7,7 +7,6 @@ using namespace std;
 
 int main()
 {
-    SinhVien a;
-    a.nhap();
-    a.xuat();
+    Truong *sv = new Truong;
+    sv->nhap();
 }

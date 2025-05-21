@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 class SinhVien
 {
@@ -32,10 +33,10 @@ class CaoDang : public SinhVien
 {
 private:
     float xet_tot_nghiep;
+
 public:
     CaoDang(/* args */);
     ~CaoDang();
-
 };
 
 CaoDang::CaoDang(/* args */)
@@ -50,6 +51,7 @@ class DaiHoc : public SinhVien
 {
 private:
     float diem_luan_van;
+
 public:
     DaiHoc(/* args */);
     ~DaiHoc();
@@ -63,11 +65,13 @@ DaiHoc::~DaiHoc()
 {
 }
 
-
 int main()
 {
-    SinhVien * a;
+    SinhVien *a;
     a->nhap();
     a->xuat();
-    
+}
+
+SinhVien::SinhVien(int &mssv, string &hoten, string &diachi, int &tinchi, float &dtb)
+{
 }

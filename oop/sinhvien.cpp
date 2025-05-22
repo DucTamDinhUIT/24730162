@@ -71,7 +71,3 @@ int main()
     a->nhap();
     a->xuat();
 }
-
-SinhVien::SinhVien(int &mssv, string &hoten, string &diachi, int &tinchi, float &dtb)
-{
-}

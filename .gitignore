@@ -1,2 +1,12 @@
 .DS_Store
-.exe
+*.exe
+*.o
+*.obj
+*.out
+*.dSYM/
+output/
+bin/
+obj/
+__pycache__/
+*.py[cod]
+*$py.class
